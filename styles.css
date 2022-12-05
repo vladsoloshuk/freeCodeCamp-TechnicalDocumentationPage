@@ -1,0 +1,126 @@
+:root {
+    --ocean: rgba(0, 22, 22, 0.4);
+}
+
+html, body {
+    color: #4d4e53;
+    background-color: #ffffff;
+    font-family: 'Open Sans', Arial, sans-serif;  
+    line-height: 2;
+  }
+  
+  #navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 310px;
+    max-height: 100%;
+    background-color: #ffffff;
+    height: 100%;
+    border-right: solid;
+    z-index: 1;
+    border-color: var(--ocean);
+  }
+  
+  #navbar ul {
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  
+  #navbar li{
+    display: flex;
+    flex-direction: column;
+    color: #4d4e53;
+    border-top: 1px solid var(--ocean);
+    list-style: none;
+    position: relative;
+    width: 100%;
+  }
+  
+  #navbar a {
+    display: block;
+    padding: 10px 30px;
+    color: #4d4e53;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  #navbar header {
+    color: black;
+    text-align: center;
+    font-size: 1.0em;
+  }
+  
+  #main-doc header {
+    text-align: left;
+    color: black;
+    margin: 0px;
+    padding-top: 5px;
+  }
+  
+  #main-doc {
+    margin-left: 320px;
+  }
+  
+  section article {
+    margin: 10px;
+    font-size: 0.98em;
+  }
+  
+  section li {
+    margin: 15px 0px 0px 20px;
+  }
+  
+  code {
+    display: block;
+    text-align: left;
+    position: relative;
+    line-height: 2;
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+  }
+  
+  @media only screen and (max-width: 815px) {
+    /* For mobile phones: */
+  
+    #navbar {
+      top: 0;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      max-height: 290px;
+      border: none;
+      z-index: 1;
+      border-bottom: 2px solid var(--ocean);
+    }
+  
+    #navbar ul {
+      max-height: 200px;       
+      overflow-y: auto;
+      overflow-x: hidden;
+      }
+  
+    #navbar header {
+      padding: 0;
+      border-bottom: 2px solid var(--ocean);
+      }
+  
+    #navbar li {
+      max-height: 200px;
+      }
+  
+    #main-doc {
+      position: relative;
+      display: block;
+      top: 270px;
+      margin-left: 0px;
+    }
+  
+    html {
+    scroll-padding-top: 270px;
+  }
+  }
